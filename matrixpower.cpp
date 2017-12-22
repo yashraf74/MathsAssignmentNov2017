@@ -18,11 +18,12 @@ matrixpower::matrixpower()
 	result = new int*[matrows];
 	for (int i = 0; i < matrows; i++)
 		result[i] = new int[matcols];
+	temp = new int*[matrows];
+	for (int i = 0; i < matrows; i++)
+		temp[i] = new int[matcols];
 	for (int R = 0; R < matrows; R++)
 		for (int C = 0; C < matcols; C++)
-			result[R][C] = matrix[R][C];
-	printresult(matrix);
-	printresult(result);
+			temp[R][C] = matrix[R][C];
 	cout << " Enter the power you want for the matrix to be multiplied by:  "; cin >> npower;
 	quikmafs();
 }
@@ -49,10 +50,13 @@ void matrixpower::quikmafs()
 				for (int C = 0; C < matcols; C++)
 				{
 					int a = 0;
-					for (int i = 0; i < matrows; i++)
-						a += (matrix[R][i] * result[i][C]);
+					for (int j = 0; j < matrows; j++)
+						a += (temp[R][j] * matrix[j][C]);
 					result[R][C] = a;
 				}
+			for (int R = 0; R < matrows; R++)
+				for (int C = 0; C < matcols; C++)
+					temp[R][C] = result[R][C];
 		}
 		printresult(result);
 	}
