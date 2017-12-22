@@ -4,7 +4,7 @@ using namespace std;
 class matrixpower
 {
 	int matrows, matcols, npower;
-	int **matrix, **result;
+	int **matrix, **temp, **result;
 	void quikmafs();
 	void printresult(int**x);
 	void printidentity();
