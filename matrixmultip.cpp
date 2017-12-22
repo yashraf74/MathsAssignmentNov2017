@@ -3,6 +3,7 @@
 //constructor reads two matrices and checks for their dimensions befor multiplication, then initalizes the "result" matrix.
 matrixmultip::matrixmultip()
 {
+	cout << "\t**TWO MATRICES MULTIPLIER**\n\n";
 	cout << "Matrix 1: \n";
 	cout << "\tenter number of rows  "; cin >> mat1rows;
 	cout << "\tenter number of columns  "; cin >> mat1cols;
