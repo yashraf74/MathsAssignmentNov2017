@@ -1,5 +1,10 @@
 #include "primes.h"
 
+primes::primes()
+{
+	cout << "\t**IS P A PRIME? (P = n^2 + n + 41; for all n < 1000)**\n\n";
+}
+
 bool primes::isprime(int n)
 {
 	for (int i = 2; i <= n / 2; ++i)
