@@ -3,6 +3,7 @@
 //the constructor reads the matrix and it's power, and calls the function that calculates the power.
 matrixpower::matrixpower()
 {
+	cout << "\t**RAISE A MATRIX TO n POWER**\n\n";
 	cout << "Matrix: \n";
 	cout << "Enter dimension \"N\" of matrix N*N  \n "; cin >> matrows;
 	matcols = matrows;
@@ -25,7 +26,6 @@ matrixpower::matrixpower()
 		for (int C = 0; C < matcols; C++)
 			temp[R][C] = matrix[R][C];
 	cout << " Enter the power you want for the matrix to be multiplied by:  "; cin >> npower;
-	quikmafs();
 }
 
 //function that does the actual calculation and stores the output in another matrix.
@@ -37,11 +37,13 @@ void matrixpower::quikmafs()
 	{
 		/*
 		here should go the code of multiplying the inverse of matrix M by "n" times [(M^-1)^n].
-		but since that there's something wrong in my implementation of that function (found in 
+		but since that there's something wrong in my implementation of that function (found in
 		echform.cpp), then I won't implement it here as it may result in more errors I wouldn't
 		be able to handle.
 		*/
 	}
+	else if (npower == 1)
+		printresult(matrix);
 	else if (npower > 0)
 	{
 		for (int i = 1; i < npower; i++)
