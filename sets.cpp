@@ -3,7 +3,7 @@
 //constructor reads the universal set, set A, and set B.
 sets::sets()
 {
-	cout << "\t**OPERATIONS ON SETS**\N\N";
+	cout << "\t**OPERATIONS ON SETS**\n\n";
 	cout << "Universal set U:\n Enter beginning and ending values for set U respectively:\n"; cin >> Ubegin >> Uend;
 	if (Uend < Ubegin)
 		swap(Ubegin, Uend);
