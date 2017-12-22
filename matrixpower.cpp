@@ -103,4 +103,5 @@ matrixpower::~matrixpower()
 {
 	delete[] matrix;
 	delete[] result;
+	delete[] temp;
 }
