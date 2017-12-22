@@ -8,6 +8,7 @@ class primes
 {
 public:
 	bool isprime(int x);
+	primes();
 	void primechecker();
 };
 
