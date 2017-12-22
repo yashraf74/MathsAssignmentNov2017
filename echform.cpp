@@ -3,6 +3,7 @@
 //the constructor reads the augmented matrix form the user.
 echform::echform()
 {
+	cout << "\t**SOLVE SYSTEM OF LINEAR EQUATIONS IN AUGMENTED MATRIX FORM**\n\n";
 	cout << "Enter dimension \"N\" of matrix N*N  \n "; cin >> nRows;
 	nColumns = nRows + 1;
 	matrix = new int*[nRows];
