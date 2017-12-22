@@ -4,6 +4,8 @@
 diophantineEq::diophantineEq()
 {
 	cout << "\t**DOES A^4 + B^4 + C^4 HAS A SOLUTION FOR A, B, C, D?**\n\n";
+	cout << " Please note: \n  This function calculates an enormous number of possibilities\n";
+	cout << "  ( ~ 430,000^4 possible combinations ), therefore this might take a long time to calculate.\n\n";
 	arrA = new double[430000]; //array to store all the powers of 4 for var A
 	arrB = new double[430000]; //array to store all the powers of 4 for var B
 	arrC = new double[430000]; //array to store all the powers of 4 for var C
