@@ -47,7 +47,7 @@ void matrixmultip::quikmafs()
 		for (int C = 0; C < resultcols; C++)
 		{
 			int a = 0;
-			for (int i = 0; i < resultrows; i++)
+			for (int i = 0; i < mat1cols || i < mat2rows; i++)
 				a += (matrix1[R][i] * matrix2[i][C]);
 			result[R][C] = a;
 		}
