@@ -18,6 +18,7 @@ diophantineEq::diophantineEq()
 		arrD[count] = pow(b, 4);
 		a++; b++; c++; d++;
 	}
+	i++, j++, k++, l++;
 }
 
 //function that checks for the variables that will satisfy the equation: ( a^4 + b^4 + c^4 = d^4 ).
